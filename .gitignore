@@ -35,7 +35,7 @@
 cpp/.idea/
 cpp/cmake-build-debug/
 cpp/cmake-build-wasm/
-cpp/cmake_build_wasm/
+cpp/cmake-build-release/
 cpp/emsdk
 
 # js
