@@ -6,6 +6,7 @@
 #define RENDER_LIB_NUMBER_HPP
 
 #include <numeric>
+#include <cmath>
 
 template<typename T>
 typename std::enable_if<!std::numeric_limits<T>::is_integer, bool>::type IsNumberEqual(T x, T y, unsigned int ulp=2) {

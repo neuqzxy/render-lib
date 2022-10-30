@@ -7,6 +7,7 @@
 
 #include <numeric>
 #include <type_traits>
+#include <functional>
 #include "Matrix.hpp"
 
 /* 随机数生成器 */
