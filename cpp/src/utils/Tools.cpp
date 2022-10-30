@@ -17,13 +17,13 @@ float Random(float left, float right)  {
     return dist(mt);
 }
 
-//Vec2f Random(const Vec2f &left, const Vec2f &right) {
-//    return Vec2f{Random(left.x, right.x), Random(left.y, right.y)};
-//}
-//
-//Vec3f Random(const Vec3f &left, const Vec3f &right) {
-//    return Vec3f{Random(left.x, right.x), Random(left.y, right.y), Random(left.z, right.z)};
-//}
+Vec2f Random(const Vec2f &left, const Vec2f &right) {
+    return Vec2f{Random(left.x, right.x), Random(left.y, right.y)};
+}
+
+Vec3f Random(const Vec3f &left, const Vec3f &right) {
+    return Vec3f{Random(left.x, right.x), Random(left.y, right.y), Random(left.z, right.z)};
+}
 
 std::wstring StrToWStr(const std::string &str) {
     std::wstring_convert <std::codecvt_utf8 <wchar_t>, wchar_t> convert;

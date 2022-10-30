@@ -172,10 +172,4 @@ T bezier(std::vector<T> pList, const float &t) {
     return bezier(_pList, t);
 }
 
-template<typename T>
-typename std::enable_if<!std::numeric_limits<T>::is_integer, bool>::type IsNumberEqual(T x, T y, unsigned int ulp=2) {
-    return std::fabs(x-y) < std::numeric_limits<T>::epsilon() * ulp
-           || std::fabs(x-y) < std::numeric_limits<T>::min();
-}
-
 #endif //WASM_EMSCRIPTEN_TEMPLATE_TOOLS_HPP
